@@ -1,0 +1,7 @@
+model: qwen3.6-27b # Must match a model name defined in configs/models.yaml
+topologies: [chain, star] # Available options: chain, star, ring, bipartite, tree, fc
+num_agents_list: [3, 4] # List of network sizes (number of agents/nodes) to test for each topology.
+decoder_mode: max # Strategy for assigning decoders to agents. Available options: max, min, random
+max_messages: 2048 # Limit on the total number of send_message invocations per simulation run.
+num_runs: 3 # Number of independent simulation runs per configuration (topology + num_agents).
+strict_sending: true # If the value is true, agents use strict mode; if false, free text mode.

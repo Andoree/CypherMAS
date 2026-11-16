@@ -1,0 +1,114 @@
+qwen3.5-4b:
+  model: Qwen/Qwen3.5-4B
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    top_k: 20
+    chat_template_kwargs:
+      enable_thinking: true
+    presence_penalty: 1.5
+    repetition_penalty: 1.0
+    min_p: 0.0
+
+qwen3.5-9b:
+  model: Qwen/Qwen3.5-9B
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 0.6
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    top_k: 20
+    chat_template_kwargs:
+      enable_thinking: true
+    presence_penalty: 1.5
+    repetition_penalty: 1.0
+    min_p: 0.0
+
+qwen3.6-27b:
+  model: Qwen/Qwen3.6-27B
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    top_k: 20
+    chat_template_kwargs:
+      enable_thinking: true
+    presence_penalty: 0.0
+    repetition_penalty: 1.0
+    min_p: 0.0
+
+qwen3.6-35b:
+  model: Qwen/Qwen3.6-35B-A3B
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    top_k: 20
+    chat_template_kwargs:
+      enable_thinking: true
+    presence_penalty: 1.5
+    repetition_penalty: 1.0
+    min_p: 0.0
+
+gpt-oss-20b:
+  model: openai/gpt-oss-20b
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  use_responses_api: false
+  seed: null
+  extra_body:
+    top_k: 64
+    reasoning_effort: high
+
+devstral-24b:
+  model: mistralai/Devstral-Small-2-24B-Instruct-2512
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 0.6
+  top_p: 0.95
+  max_tokens: 8192
+
+gpt-oss-120b:
+  model: gpt-oss
+  api_base: EXTERNAL_ENDPOINT
+  api_key: EXTERNAL_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    top_k: 64
+    reasoning_effort: high
+
+gemma4-31b:
+  model: google/gemma-4-31B-it
+  api_base: VLLM_ENDPOINT
+  api_key: VLLM_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: true
+    top_k: 64
+
+glm-5.2:
+  model: GLM-5.2
+  api_base: EXTERNAL_ENDPOINT
+  api_key: EXTERNAL_KEY
+  temperature: 1.0
+  top_p: 0.95
+  max_tokens: 8192
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: true
